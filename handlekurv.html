@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Firstshoes</title>
+</head>
+<body>
+    <header>
+        <a href="#main" class="skip-link">Hopp til hovedinnhold</a>
+        <section id="header-sub">
+            <span>Gratis levering<img src="gfx/check.svg" alt="Checkmark" class="icon-xs"></span>
+            <span>Gratis retur<img src="gfx/check.svg" alt="Checkmark" class="icon-xs"></span>
+            <span>60 dagers åpent kjøp<img src="gfx/check.svg" alt="Checkmark" class="icon-xs"></span>
+            <nav aria-label="secondary">
+                <ul>
+                    <li>
+                        <a href="#" class="text-black"><span>favoritter</span><img src="gfx/heart.svg" alt="Vis lagret i favoritter" class="icon-s"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-black"><span class="text-black">Min profil</span><img src="gfx/profile.svg" alt="Gå til min profil" class="icon-s"></a>
+                    </li>
+                    <li>
+                        <a href="handlekurv.html" class="text-black"><span>Handlekurv</span><img src="gfx/shopping_bag.svg" alt="Vis produkter i handlekurv" class="icon-s"></a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <section id="header-main">
+            <span class="logo" role="navigation"><a href="index.html">Firstshoes</a></span>
+            <span class="icon-m">
+                <a href="#"><img src="gfx/search.svg" alt="Søk etter produkter" class="icon-m"></a>
+            </span>
+            <span class="icon-m">
+               <a href="#" aria-label="menu"><img src="gfx/hamburger.svg" alt="Åpne meny" class="icon-m"></a>
+            </span>
+            <nav aria-label="primary">
+                <ul>
+                    <li><a href="#">Herre</a></li>
+                    <li><a href="#">Dame</a></li>
+                    <li><a href="#">Merker</a></li>
+                    <li><a href="#">Tilbud</a></li>
+                    <li><a href="#">Vinter</a></li>
+                </ul>
+            </nav>
+            <form role="search">
+                <input type="text" id="search-input" placeholder="Søk etter produkter">
+                <button type="submit"><img src="gfx/search.svg" alt="" class="icon-white">Søk</button>
+            </form>
+        </section>
+    </header>
+    <main id="handlekurv">
+        <section>
+            <h1>Min handlekurv</h1>
+        </section>
+        <section>
+            <article class="cart_item">
+                <img src="img/viking-s.jpg" alt="">
+                <article>
+                    <h2>Liam warn gore-tex black</h2>
+                    <p>Size: 42</p>
+                    <p>Color: dark</p>
+                </article>
+                <article>
+                    <form>
+                        <img src="gfx/left-arrow.svg" alt="" class="icon-xs">
+                        <input type="number" placeholder="1">
+                        <img src="gfx/right-arrow.svg" alt="" class="icon-xs">
+                    </form>
+                    <span>499,-</span>
+                </article>
+            </article>
+            <article class="cart_item">
+                <img src="img/skecher-s.jpg" alt="">
+                <article>
+                    <h2>Boys flex glow elite blinkesko</h2>
+                    <p>Size: 42</p>
+                    <p>Color: Green</p>
+                </article>
+                <article>
+                    <form>
+                        <img src="gfx/left-arrow.svg" alt="" class="icon-xs">
+                        <input type="number" placeholder="1">
+                        <img src="gfx/right-arrow.svg" alt="" class="icon-xs">
+                    </form>
+                    <span>249,-</span>
+                </article>
+            </article>
+            <article class="cart_item">
+                <img src="img/polo-s.jpg" alt="">
+                <article>
+                    <h2>Masters crt - sneakrs low top lace</h2>
+                    <p>Size: 42</p>
+                    <p>Color: Green</p>
+                </article>
+                <article>
+                    <form>
+                        <img src="gfx/left-arrow.svg" alt="" class="icon-xs">
+                        <input type="number" placeholder="1">
+                        <img src="gfx/right-arrow.svg" alt="" class="icon-xs">
+                    </form>
+                    <span>249,-</span>
+                </article>
+            </article>
+        </section>
+        <section id="handlekurv_pris">
+            <div id="pris_oversikt">
+                <p>4 produkter</p>
+                <p><span>Subtotal inkl mva</span><span>997,-</span></p>
+                <p><span>Frakt</span><span>Gratis</span></p>
+                <p class="totalt"><span>Totalt</span><span>997,-</span></p>
+            </div>
+            <a href="#" class="btn-l solid-dark">Til kassen</a>
+            <a href="#" class="btn-l outline-dark">Fortsett å handle</a>
+        </section>
+    </main>
+    <footer>
+        <section id="footer-main">
+            <article>
+                <span class="logo"><a href="index.html">Firstshoes</a></span>
+                <p>Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.</p>
+                <form>
+                    <h3>Meld deg på nyhetsbrev</h3>
+                    <input type="text" placeholder="E-post">
+                    <input type="submit" value="Bli medlem nå!">
+                </form>
+            </article>
+            <article>
+                <h3>Kategorier</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#">Barn</a></li>
+                        <li><a href="#">Herre</a></li>
+                        <li><a href="#">Dame</a></li>
+                        <li><a href="#">Tilbud</a></li>
+                        <li><a href="#">Vinter</a></li>
+                    </ul>
+                </nav>
+            </article>
+            <article>
+                <h3>Kundeservice</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#">Betaling</a></li>
+                        <li><a href="#">Levering</a></li>
+                        <li><a href="#">Retur</a></li>
+                        <li><a href="#">Reklamasjon</a></li>
+                    </ul>
+                </nav>
+            </article>           
+            <article>
+                <h3>Kontakt</h3>
+                <address>
+                    <p>Firstshoes AS</p>
+                    <p>Fjellveien 13</p>
+                    <p>1234 Moss Angeles</p>
+                </address>
+            </article>
+        </section>
+        <section id="footer-sub">
+            <p>© 2023, Firstshoes</p>
+        </section>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

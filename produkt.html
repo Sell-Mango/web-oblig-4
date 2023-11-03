@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Firstshoes</title>
+</head>
+<body>
+    <header>
+        <a href="#main" class="skip-link">Hopp til hovedinnhold</a>
+        <section id="header-sub">
+            <span>Gratis levering<img src="gfx/check.svg" alt="Checkmark" class="icon-xs"></span>
+            <span>Gratis retur<img src="gfx/check.svg" alt="Checkmark" class="icon-xs"></span>
+            <span>60 dagers åpent kjøp<img src="gfx/check.svg" alt="Checkmark" class="icon-xs"></span>
+            <nav aria-label="secondary">
+                <ul>
+                    <li>
+                        <a href="#" class="text-black"><span>favoritter</span><img src="gfx/heart.svg" alt="Vis lagret i favoritter" class="icon-s"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-black"><span class="text-black">Min profil</span><img src="gfx/profile.svg" alt="Gå til min profil" class="icon-s"></a>
+                    </li>
+                    <li>
+                        <a href="handlekurv.html" class="text-black"><span>Handlekurv</span><img src="gfx/shopping_bag.svg" alt="Vis produkter i handlekurv" class="icon-s"></a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <section id="header-main">
+            <span class="logo" role="navigation"><a href="index.html">Firstshoes</a></span>
+            <span class="icon-m">
+                <a href="#"><img src="gfx/search.svg" alt="Søk etter produkter" class="icon-m"></a>
+            </span>
+            <span class="icon-m">
+               <a href="#" aria-label="menu"><img src="gfx/hamburger.svg" alt="Åpne meny" class="icon-m"></a>
+            </span>
+            <nav aria-label="primary">
+                <ul>
+                    <li><a href="#">Herre</a></li>
+                    <li><a href="#">Dame</a></li>
+                    <li><a href="#">Merker</a></li>
+                    <li><a href="#">Tilbud</a></li>
+                    <li><a href="#">Vinter</a></li>
+                </ul>
+            </nav>
+            <form role="search">
+                <input type="text" id="search-input" placeholder="Søk etter produkter">
+                <button type="submit"><img src="gfx/search.svg" alt="" class="icon-white">Søk</button>
+            </form>
+        </section>
+    </header>
+    <main id="produkt">
+        <section id="prod_start">
+            <ul class="breadcrumbs">
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="#">Produkter</a></li>
+                <li>Produkt</li>
+            </ul>
+            <div id="prod_slider">
+                <span class="slide">
+                    <img src="img/viking-s.jpg" alt="Produktvisualisering av en sko" class="slide-img bg-image">
+                </span>
+                <span class="slide">
+                    <img src="img/viking-s3.jpg" alt="Produktvisualisering av et par sko" class="slide-img bg-image">
+                </span>
+                <span class="slide">
+                    <img src="img/viking-s4.jpg" alt="Barn som bruker sko" class="slide-img bg-image">
+                </span>
+                <div class="slide-arrows">
+                    <span class="slide-arrow-left icon-xs" tabindex="0" onclick="plusDivs(-1)"><img src="gfx/left-arrow.svg" alt="slide til venstre" class="slide-navi-arrow"></span>
+                    <span class="slide-arrow-right icon-xs" tabindex="0" onclick="plusDivs(1)"><img src="gfx/right-arrow.svg" alt="slide til høyre" class="slide-navi-arrow"></span>
+                </div>
+                <div class="slide-dots">
+                    <span class="dot" onclick="currentDiv(1)"></span>
+                    <span class="dot" onclick="currentDiv(2)"></span>
+                    <span class="dot" onclick="currentDiv(3)"></span>
+                </div>
+            </div>
+            <img src="img/viking-s.jpg" alt="produkt galleri thumbail" class="prod_slide_thumb">
+            <img src="img/viking-s3.jpg" alt="produkt galleri thumbail" class="prod_slide_thumb">
+            <img src="img/viking-s4.jpg" alt="produkt galleri thumbail" class="prod_slide_thumb">
+        </section>
+        <section id="prod_info">
+            <article id="prod_info_header">
+                <span id="info_brand">Viking</span>
+                <h1>Liam warm gore-tex black</h1>
+                <p>Disse turinspirerte vinterskoene er perfekte for barn som ønsker litt originalitet i vinter. Liam Mid GTX Warm har en slitesterk konstruksjon, med et varmt isolerende fôr og vanntett Gore-Tex-beskyttelse. Disse skoene har en standard passform og elastiske snører som er sikret med en borrelåsstropp.</p>
+            </article>
+            <article id="prod_info_color">
+                <h2>Velg farge</h2>
+                <span></span>
+                <span></span>
+                <span></span>
+            </article>
+            <article id="prod_info_size">
+                <h2>Velg størrelse</h2>
+                <button>Velg størrelse<img src="gfx/right-arrow.svg" alt="" class="icon-xs"></button>
+                <span>39</span>
+                <span>40</span>
+                <span>41</span>
+                <span>42</span>
+                <span>43</span>
+                <span>44</span>
+                <span>45</span>
+                <span>46</span>
+            </article>
+            <article id="prod_info_action">
+                <span>399,-</span>
+                <a href="handlekurv.html" class="btn-l solid-dark">Legg i handlekurv<img src="gfx/shopping_bag.svg" alt="" class="icon-s icon-white"></a>
+                <a href="handlekurv.html" class="btn-l outline-dark">Legg til favoritt<img src="gfx/heart.svg" alt="" class="icon-s"></a>
+            </article>
+        </section>
+        <section id="prod_faq">
+            <h2>Produktinformasjon</h2>
+            <article>
+                <h3>Spesifikasjoner</h3>
+                <img src="gfx/right-arrow.svg" alt="" class="icon-xs">
+            </article>
+            <article>
+                <h3>Vurderinger</h3>
+                <img src="gfx/right-arrow.svg" alt="" class="icon-xs">
+            </article>
+            <article>
+                <h3>Frakt og levering</h3>
+                <img src="gfx/right-arrow.svg" alt="" class="icon-xs">
+            </article>
+        </section>
+        <section id="produkter">
+            <h2>Flere produkter</h2>
+            <article>
+                <a href="#">
+                    <h3>Shoes</h3>
+                    <h4>Duffy</h4>
+                    <span>249kr</span>
+                    <span><img src="gfx/heart.svg" alt="Legg til favoritt"></span>
+                    <img src="img/duffy-s.jpg" alt="produktbilde for Shoes sko">
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                    <h3>Shape 35 sartorelle</h3>
+                    <h4>Ecco</h4>
+                    <span>249kr</span>
+                    <span><img src="gfx/heart.svg" alt="Legg til favoritt"></span>
+                    <img src="img/eccho-s2.jpg" alt="produktbilde for Shape 35 sartorelle sko">
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                    <h3>R-revolurion skinnsneakers</h3>
+                    <h4>Rieker-evolution</h4>
+                    <span>249kr</span>
+                    <span><img src="gfx/heart.svg" alt="Legg til favoritt"></span>
+                    <img src="img/rieker-evolution-s.jpg" alt="produktbilde for R-revolurion skinnsneakers sko">
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                    <h3>Masters crt - sneakers low top lace</h3>
+                    <h4>Polo</h4>
+                    <span>249kr</span>
+                    <span><img src="gfx/heart.svg" alt="Legg til favoritt"></span>
+                    <img src="img/polo-s.jpg" alt="produktbilde for Masters crt - sneakers low top lace sko">
+                </a>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <section id="footer-main">
+            <article>
+                <span class="logo"><a href="index.html">Firstshoes</a></span>
+                <p>Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.</p>
+                <form>
+                    <h3>Meld deg på nyhetsbrev</h3>
+                    <input type="text" placeholder="E-post">
+                    <input type="submit" value="Bli medlem nå!">
+                </form>
+            </article>
+            <article>
+                <h3>Kategorier</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#">Barn</a></li>
+                        <li><a href="#">Herre</a></li>
+                        <li><a href="#">Dame</a></li>
+                        <li><a href="#">Tilbud</a></li>
+                        <li><a href="#">Vinter</a></li>
+                    </ul>
+                </nav>
+            </article>
+            <article>
+                <h3>Kundeservice</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#">Betaling</a></li>
+                        <li><a href="#">Levering</a></li>
+                        <li><a href="#">Retur</a></li>
+                        <li><a href="#">Reklamasjon</a></li>
+                    </ul>
+                </nav>
+            </article>           
+            <article>
+                <h3>Kontakt</h3>
+                <address>
+                    <p>Firstshoes AS</p>
+                    <p>Fjellveien 13</p>
+                    <p>1234 Moss Angeles</p>
+                </address>
+            </article>
+        </section>
+        <section id="footer-sub">
+            <p>© 2023, Firstshoes</p>
+        </section>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
