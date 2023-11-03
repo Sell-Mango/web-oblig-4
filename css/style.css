@@ -26,6 +26,10 @@ body {
   background-color: #000000;
 }
 
+.bg-97 {
+  background-color: #F7F7F7;
+}
+
 .bg-92 {
   background-color: #EBEBEB;
 }
@@ -141,7 +145,7 @@ p {
 }
 
 /* Init flexbox */
-#header-main, #header-sub, #header-sub span, #header-sub nav, #header-sub ul, #header-sub ul a, #header-main form button, .category, #selling-points span, .merker-header, .merker-body, .merker-body a, #produkter article a, #bli-medlem article, #ads article, footer form, footer ul {
+#header-main, #header-sub, #header-sub span, #header-sub nav, #header-sub ul, #header-sub ul a, #header-main form button, .category, #selling-points span, .merker-header, .merker-body, .merker-body a, #produkter article a, #bli-medlem article, #ads article, footer form, footer ul, .analyse-section {
   display: flex;
 }
 
@@ -151,12 +155,12 @@ p {
 }
 
 /* Document horizontal and vertical padding */
-#kategorier, #merker, #produkter, #ads, #selling-points, #merker, #bli-medlem article, #footer-main {
+#kategorier, #merker, #produkter, #ads, #selling-points, #merker, #bli-medlem article, #footer-main, #analyse-h1, .analyse-section {
   padding: 4rem 2rem;
 }
 
 /* Document max width */
-#header-sub, #header-main, #merker, #produkter, #ads, #footer-main, #footer-sub p {
+#header-sub, #header-main, #merker, #produkter, #ads, #footer-main, #footer-sub p, #analyse-h1, .analyse-section {
   max-width: 128rem;
   margin: auto;
 }
@@ -833,11 +837,24 @@ header {
   font-weight: 500;
 }
 
+#analyse-h1 {
+  font-size: clamp(3.8rem, 3.8rem + (1vw - 0.76rem) * 4.2308, 6rem);
+  font-weight: 600;
+}
+
+.analyse-section {
+  flex-direction: column;
+}
+.analyse-section h2 {
+  font-size: clamp(3rem, 3rem + (1vw - 0.76rem) * 1.9231, 4rem);
+  font-weight: 500;
+}
+
 footer {
   background-color: #F7F7F7;
 }
 footer h3 {
-  font-size: clamp(1.8rem, 1.8rem + (1vw - 0.76rem) * 0.3846, 2rem);
+  font-size: clamp(1.6rem, 1.6rem + (1vw - 0.76rem) * 0.3846, 1.8rem);
   font-weight: 600;
 }
 footer ul {
