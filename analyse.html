@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <title>Firstshoes</title>
+    <title>Analyse - Firstshoes</title>
 </head>
 <body>
     <header>
@@ -55,7 +55,7 @@
         </section>
     </header>
 
-    <main id="main" class="bg-97">
+    <main id="main" class="bg-97 analyse-main">
         <h1 id="analyse-h1">Nettside analyse</h1>
         <section class="analyse-section">
             <h2>nøkkelord analyse</h2>
@@ -86,7 +86,170 @@
                 <h4>Gratis frakt</h4>
             </article>
         </section>
+        <section class="analyse-section analyse-3-col-grid">
+            <h2>SEO og UU analyse med Google Lighthouse</h2>
+            <p>SEO og UU analysen er gjennomført med Google Lighthouse i Google Chrome og tar for seg forsiden, produkt og handlekurv.</p>
 
+            <article class="analyse-col">
+                <h3>Forside</h3>
+                <p>Forsiden er testet på mobil og desktop, resultatene viser at siden mangler meta description.</p>
+                <img src="img/SEO_forside_for.jpg" alt="" />
+                <p>Resultatene fra UU testen på forsiden viser ingen feil eller mangler.</p>
+                <img src="img/UU_Forside_for.jpg" alt="" />
+            </article>
+            <article class="analyse-col">
+                <h3>Produkt side</h3>
+                <p>produktsiden er testet på mobil og desktop, resultatene viser at siden mangler meta description.</p>
+                <img src="img/SEO_produkt_for.jpg" alt="" />
+                <p>Resultatene fra UU testen på produktsiden viser at "skip-link" ikke er fokuserbar.</p>
+                <img src="img/UU_produk_for.jpg" alt="" />
+            </article>
+            <article class="analyse-col">
+                <h3>Handlekurv</h3>
+                <p>Handlekurv er testet på mobil og desktop, resultatene viser at siden mangler meta description.</p>
+                <img src="img/SEO_handlekurv_for.jpg" alt="" />
+                <p>Resultatene fra UU testen på handlekurv viser at "skip-link" ikke er fokuserbar.</p>
+                <img src="img/UU_handlekurv_for.jpg" alt="" />
+            </article>  
+        </section>
+
+        <section class="analyse-section analyse-3-col-grid">
+            <h2>Performance & best practises Google Lighthouse</h2>
+            <p>Performance analyse er gjennomført med Google Lighthouse og tar for seg forsiden, produkt og handlekurv.</p>
+
+            <article class="analyse-col">
+                <h3>Forside</h3>
+                <p>Resultatene av performance på telefon gir en poengsum på 63 og 80 av 100 på Desktop.</p>
+                <img src="img/performance_forside_mobil_for.jpg" alt="" />
+                <p>Lighthouse mener forbedringstiltak innebærer å komprimere bilder, konvertere til Webp og bruke en server som støtter HTTP2.</p>
+                <img src="img/performance_forside_mobil_for_2.jpg" alt="" />
+            </article>
+            <article class="analyse-col">
+                <h3>Produkt side</h3>
+                <p>Resultatene av performance for produktsiden gir en poengsum på 80 av 100</p>
+                <img src="img/performance_produkt_for.jpg" alt="" />
+                <p>Som med forsiden er mindre bildestørrelser og konverting til webp anbefalte forbedringstiltak.</p>
+                <img src="img/performance_produkt_for_2.jpg" alt="" />
+            </article>
+            <article class="analyse-col">
+                <h3>Handlekurv</h3>
+                <p>Resultatene av performance for handlekurv gir en poengsum på 100 av 100 og gir ingen spesifikke tilbakemeldinger til forbedringstiltak</p>
+                <img src="img/Performance_handlekurv_for.jpg" alt="" />
+            </article>  
+        </section>
+
+        <section class="analyse-section analyse-3-col-grid">
+            <h2>UU analyse med Webaim</h2>
+            <p>Analyse for nettsidens universelle utforming er gjennomført med Webaim for forside, produkt og handlekurv. Det er tatt skjermbilder for oppsummering av resultatene.</p>
+
+            <article class="analyse-col">
+                <h3>Forside</h3>
+                <img src="img/Webaim_forside.jpg" alt="" />
+                <p><strong>Feilmeldinger: </strong>2 av Feilmeldingene skyldes form input i header (søkemotor) og footer (nyhetsbrev) mangler label. Den siste feilmeldingen er et bilde som mangler en alt atributt, selv om Webaim ikke klarer å lokalisere hvor det er. </p>
+                <p><strong>Kontrast: </strong>1 advarsel om dårlig kontrast som skylder "skip-link" knappen som er usynlig.</p>
+                <p><strong>Advarsler: </strong>7 av advarslene skylder linker som går til samme side, hvert alle produktkort linker til samme produkt. 3 advarsler skyldes navigasjonsdotter i header slideren som benytter javascript ikke er fungerer med tabulator, og mangler form for kontekst for skjermlesere.</p>
+            </article>
+            <article class="analyse-col">
+                <h3>Produkt side</h3>
+                <img src="img/Webaim_produkt.jpg" alt="" />
+                <p><strong>Feilmeldinger: </strong>De samme feilmeldingene som på forsiden, form inputs mangler labels og manglene alt atributt på et bilde som ikke kan lokaliseres.</p>
+                <p><strong>Advarsler: </strong>Samme som forsiden, produktkort linkes til samme produktside.</p>
+                <p><strong>Kontrast: </strong>"Skip-link" er usynlig når den ikke er fokusert.</p>
+            </article>
+            <article class="analyse-col">
+                <h3>Handlekurv</h3>
+                <img src="img/Webaim_handlekurv.jpg" alt="" />
+                <p><strong>Feilmeldinger: </strong>5 Feilmeldinger skylder form inputs som mangler labels, gjelder i header, footer og antall av hvert produkt i handlekurv. Siste feilmelding skylder et bilde som mangler alt atributt som ikke kan lokaliseres.</p>
+                <p><strong>Advarsler: </strong>"Skip link" linker til en id "main" som ikke eksisteres på handlekurv siden.</p>
+                <p><strong>Kontrast: </strong>"Skip-link" er usynlig når den ikke er fokusert.</p>
+            </article>  
+        </section>
+        <section class="analyse-section">
+            <h2>SEO og UU analyse med ChatGPT</h2>
+            <p>Har bedt ChatGPT (GPT4) å lese gå gjennom koden til forside, produkt og handlekurv og gi anbefalte forbedringstiltak til SEO og universell utforming. Har promptet til GPT på engelsk og spurt: <i lang="en">"Act as a professional web developer and review this code for a webstore for shoes from an universal design and SEO perspective. Give me specific solutions on how it can be improved"</i>, etterfulgt av koden til hver side. ChatGPT sine tilbakemeldinger inneholder både tiltak som kan forbedres og allerede eksiteres på de ulike sidene.</p>
+            <article class="gpt-row">
+                <h3>Forside</h3>
+                <h4>Forside SEO</h4>
+                <p>Bedre beskrevet title tag, inkludere meta description, microdata, sitemap og social sharing cards er noen spesifikke tiltak ChatGPT anbefaler for SEO. For hastghet anbefaler GPT å bruke srscet for ulike bildestørrelser på ulike enheter.</p>
+                <img src="img/GPT_Forside_SEO.jpg" alt="" />
+                <img src="img/GPT_Forside_SEO_2.jpg" alt="" />
+                <h4>Forside UU</h4>
+                <p>Forbedret bruk av aria-labels, button tag for interaktive elementer istedenfor span tag og labels for form inputs er forslag til UU forbedringstiltak fra chatGPT. For logo mener chatGPT ikke role="navigation" er nødvendig ettersom span class="logo" er beskrivende nok. </p>
+                <img src="img/GPT_Forside_UU.jpg" alt="" />
+            </article>
+            <article class="gpt-row">
+                <h3>Produkt</h3>
+                <h4>Produkt SEO</h4>
+                <p>Flere gode tiltak for SEO på produktsiden. De mest åpenbare er bedre beskrevet title tag og en godt beskrevet meta tag med description atributt. ChatGPT påpeker at H1 taggen ikke må skippes, en løsning vil være å bruke order slik at innholdet kommer først i html, men visuelt vises produktbildene først. Videre er det bedre navngiving av bilder, inkludere microdata, linke opp sider internt (hvis jeg hadde flere) og linke til sosiale medier.</p>
+                <img src="img/GPT_Produkt_SEO.jpg" alt="" />
+                <img src="img/GPT_Produkt_SEO2.jpg" alt="" />
+                <h4>Produkt UU</h4>
+                <p>ChatGPT oppdaget at "skip-link" knappen ikke hopper til hovedinnhold, bedre alt beskrivelser på bilder, title beskrielser ikoner, manglende label for inputs, bedre fargekontrast og vise feilmeldinger til kjøpere er UU anbefalinger. </p>
+                <img src="img/GPT_Produkt_UU.jpg" alt="" />
+            </article>
+            <article class="gpt-row">
+                <h3>Handlekurv</h3>
+                <h4>handlekurv SEO</h4>
+                <p>Som med forsiden og produkt, bedre beskrevet title og inkludere meta description. Bedre struktur for h tagger, mer tydlighet i knapper/linker, sitemap og linke opp sosiale medier er anbefalte SEO tiltak fra ChatGPT. </p>
+                <img src="img/GPT_Handlekurv_SEO.jpg" alt="" />
+                <h4>Handlekurv UU</h4>
+                <p>Forbedrende UU tiltak er bedre beskrivende alt tekster på bilder, bedre tastaturnavigasjon, button tag for elementer med handlinger, label for inputs og fungerende "skip-link" knapp.</p>
+                <img src="img/GPT_Handlekurv_UU.jpg" alt="" />
+            </article>
+        </section>
+        <section class="analyse-section table-container">
+            <h2>Sammenligning av resultater</h2>
+            <table id="sammenligning">
+                <thead>
+                    <tr>
+                        <th><p>Svar</p></th>
+                        <th><h3>ChatGPT</h3></th>
+                        <th><h3>Lighthouse</h3></th>
+                        <th><h3>Webaim</h3></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Head tagger</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Skip links</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Optimalisere bilder</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Bildetekst og navn</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Tittelstruktur</td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="analyse-section">
+            <h2>Forberdringstiltak</h2>
+        </section>
+        <section class="analyse-section">
+            <h2>SEO og UU analyse med Google Lighthouse (oppdatering)</h2>
+        </section>
+        <section class="analyse-section">
+            <h2>UU analyse med Webaim (Oppdatering)</h2>
+        </section>
+        <section class="analyse-section">
+            <h2>Skjermleserkompatibilitet</h2>
+        </section>
+        <section class="analyse-section">
+            <h2>Microdata og rich results</h2>
+        </section>
+        <section class="analyse-section">
+            <h2>Metadata og SOME</h2>
+        </section>
 
     </main>
 
