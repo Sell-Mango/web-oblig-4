@@ -949,18 +949,24 @@ header {
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
-    border: 1px solid #ddd;
+    
     h3 {
         font-size: $heading-xs;
         font-weight: 500;
     }
 
     th, td {
-        border: 1px solid $black;
+        border: .1rem solid rgba(0,0,0,.15);
         text-align: left;
-        padding: 8px;
+        padding: $space-s;
     }
-    tr:nth-child(even){background-color: #f2f2f2}
+
+    tr:nth-child(even){background-color: $shade-97; }
+
+    tr td:first-child {
+        font-size: $text-s;
+        font-weight: 500;
+    }
 }
 
 

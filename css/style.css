@@ -169,7 +169,8 @@ p {
   width: 100%;
   height: 100%;
   position: absolute;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   overflow: hidden;
   top: 0;
   left: 0;
@@ -380,7 +381,8 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  column-gap: 1rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
   margin-bottom: 1rem;
 }
 .merker-header p {
@@ -474,8 +476,10 @@ header {
   width: 100%;
   max-height: 18rem;
   order: -1;
-  object-fit: cover;
-  object-position: bottom;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
 }
 #produkter span:not(:last-child) {
   font-size: clamp(1.8rem, 1.8rem + (1vw - 0.76rem) * 0.3846, 2rem);
@@ -558,16 +562,20 @@ header {
 .slide-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: bottom;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
 }
 
 .prod_slide_thumb {
   display: none;
   width: 100%;
   max-height: 15rem;
-  object-fit: cover;
-  object-position: bottom;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
 }
 
 #prod_info {
@@ -605,7 +613,8 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  column-gap: clamp(1.2rem, 1.2rem + (1vw - 0.76rem) * 1.1538, 1.8rem);
+  -moz-column-gap: clamp(1.2rem, 1.2rem + (1vw - 0.76rem) * 1.1538, 1.8rem);
+       column-gap: clamp(1.2rem, 1.2rem + (1vw - 0.76rem) * 1.1538, 1.8rem);
 }
 #prod_info_color h2 {
   width: 100%;
@@ -628,7 +637,8 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  column-gap: clamp(1.2rem, 1.2rem + (1vw - 0.76rem) * 1.1538, 1.8rem);
+  -moz-column-gap: clamp(1.2rem, 1.2rem + (1vw - 0.76rem) * 1.1538, 1.8rem);
+       column-gap: clamp(1.2rem, 1.2rem + (1vw - 0.76rem) * 1.1538, 1.8rem);
 }
 #prod_info_size h3 {
   width: 100%;
@@ -759,8 +769,10 @@ header {
   height: 100%;
   max-height: 15rem;
   overflow: hidden;
-  object-fit: cover;
-  object-position: bottom;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
 }
 .cart_item > :nth-child(2) {
   flex: 2 1 0;
@@ -909,7 +921,8 @@ header {
 .gpt-row img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   display: inline-block;
   max-width: 48%;
   margin-bottom: 2em;
@@ -923,19 +936,22 @@ header {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
-  border: 1px solid #ddd;
 }
 #sammenligning h3 {
   font-size: clamp(2rem, 2rem + (1vw - 0.76rem) * 0.9615, 2.5rem);
   font-weight: 500;
 }
 #sammenligning th, #sammenligning td {
-  border: 1px solid #000000;
+  border: 0.1rem solid rgba(0, 0, 0, 0.15);
   text-align: left;
-  padding: 8px;
+  padding: clamp(1.2rem, 1.2rem + (1vw - 0.76rem) * 1.1538, 1.8rem);
 }
 #sammenligning tr:nth-child(even) {
-  background-color: #f2f2f2;
+  background-color: #F7F7F7;
+}
+#sammenligning tr td:first-child {
+  font-size: clamp(1.4rem, 1.4rem + (1vw - 0.76rem) * 0.3846, 1.6rem);
+  font-weight: 500;
 }
 
 footer {
