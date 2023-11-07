@@ -2,16 +2,17 @@
 <html lang="no">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <title>Firstshoes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kjøp Liam warm black fra Gore-tex, slitesterke vintersko som er perfekte for barn som ønsker litt originalitet i vinter.">
+    <title>Liam warm gore-tex black - Firstshoes</title>
 </head>
 <body>
     <header>
-        <a href="#main" class="skip-link">Hopp til hovedinnhold</a>
+        <a href="#produkt" class="skip-link">Hopp til hovedinnhold</a>
         <section id="header-sub">
             <span>Gratis levering<img src="gfx/check.svg" alt="Checkmark" class="icon-xs"></span>
             <span>Gratis retur<img src="gfx/check.svg" alt="Checkmark" class="icon-xs"></span>
@@ -49,42 +50,13 @@
                 </ul>
             </nav>
             <form role="search">
+                <label for="search-input" hidden>Søk etter sko</label>
                 <input type="text" id="search-input" placeholder="Søk etter produkter">
                 <button type="submit"><img src="gfx/search.svg" alt="" class="icon-white">Søk</button>
             </form>
         </section>
     </header>
     <main id="produkt">
-        <section id="prod_start">
-            <ul class="breadcrumbs">
-                <li><a href="index.html">Hjem</a></li>
-                <li><a href="#">Produkter</a></li>
-                <li>Produkt</li>
-            </ul>
-            <div id="prod_slider">
-                <span class="slide">
-                    <img src="img/viking-s.jpg" alt="Produktvisualisering av en sko" class="slide-img bg-image">
-                </span>
-                <span class="slide">
-                    <img src="img/viking-s3.jpg" alt="Produktvisualisering av et par sko" class="slide-img bg-image">
-                </span>
-                <span class="slide">
-                    <img src="img/viking-s4.jpg" alt="Barn som bruker sko" class="slide-img bg-image">
-                </span>
-                <div class="slide-arrows">
-                    <span class="slide-arrow-left icon-xs" tabindex="0" onclick="plusDivs(-1)"><img src="gfx/left-arrow.svg" alt="slide til venstre" class="slide-navi-arrow"></span>
-                    <span class="slide-arrow-right icon-xs" tabindex="0" onclick="plusDivs(1)"><img src="gfx/right-arrow.svg" alt="slide til høyre" class="slide-navi-arrow"></span>
-                </div>
-                <div class="slide-dots">
-                    <span class="dot" onclick="currentDiv(1)"></span>
-                    <span class="dot" onclick="currentDiv(2)"></span>
-                    <span class="dot" onclick="currentDiv(3)"></span>
-                </div>
-            </div>
-            <img src="img/viking-s.jpg" alt="produkt galleri thumbail" class="prod_slide_thumb">
-            <img src="img/viking-s3.jpg" alt="produkt galleri thumbail" class="prod_slide_thumb">
-            <img src="img/viking-s4.jpg" alt="produkt galleri thumbail" class="prod_slide_thumb">
-        </section>
         <section id="prod_info">
             <article id="prod_info_header">
                 <span id="info_brand">Viking</span>
@@ -114,6 +86,36 @@
                 <a href="handlekurv.html" class="btn-l solid-dark">Legg i handlekurv<img src="gfx/shopping_bag.svg" alt="" class="icon-s icon-white"></a>
                 <a href="handlekurv.html" class="btn-l outline-dark">Legg til favoritt<img src="gfx/heart.svg" alt="" class="icon-s"></a>
             </article>
+        </section>
+        <section id="prod_start">
+            <ul class="breadcrumbs">
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="#">Produkter</a></li>
+                <li>Produkt</li>
+            </ul>
+            <div id="prod_slider">
+                <span class="slide">
+                    <img src="img/viking-s.jpg" alt="Produktvisualisering av en sko" class="slide-img bg-image">
+                </span>
+                <span class="slide">
+                    <img src="img/viking-s3.jpg" alt="Produktvisualisering av et par sko" class="slide-img bg-image">
+                </span>
+                <span class="slide">
+                    <img src="img/viking-s4.jpg" alt="Barn som bruker sko" class="slide-img bg-image">
+                </span>
+                <div class="slide-arrows">
+                    <span class="slide-arrow-left icon-xs" tabindex="0" onclick="plusDivs(-1)"><img src="gfx/left-arrow.svg" alt="slide til venstre" class="slide-navi-arrow"></span>
+                    <span class="slide-arrow-right icon-xs" tabindex="0" onclick="plusDivs(1)"><img src="gfx/right-arrow.svg" alt="slide til høyre" class="slide-navi-arrow"></span>
+                </div>
+                <div class="slide-dots">
+                    <span class="dot" onclick="currentDiv(1)"></span>
+                    <span class="dot" onclick="currentDiv(2)"></span>
+                    <span class="dot" onclick="currentDiv(3)"></span>
+                </div>
+            </div>
+            <img src="img/viking-s.jpg" alt="produkt galleri thumbail" class="prod_slide_thumb">
+            <img src="img/viking-s3.jpg" alt="produkt galleri thumbail" class="prod_slide_thumb">
+            <img src="img/viking-s4.jpg" alt="produkt galleri thumbail" class="prod_slide_thumb">
         </section>
         <section id="prod_faq">
             <h2>Produktinformasjon</h2>
@@ -177,7 +179,8 @@
                 <p>Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.</p>
                 <form>
                     <h3>Meld deg på nyhetsbrev</h3>
-                    <input type="text" placeholder="E-post">
+                    <label for="sign-up-mail" hidden>Din E-post</label>
+                    <input type="email" id="sign-up-mail" placeholder="E-post">
                     <input type="submit" value="Bli medlem nå!">
                 </form>
             </article>

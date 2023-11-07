@@ -2,11 +2,12 @@
 <html lang="no">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Firstshoes selger billige sko til hele familien i alle årstider. Gratis levering og 60 dagers åpent kjøp.">
     <title>Analyse - Firstshoes</title>
 </head>
 <body>
@@ -197,7 +198,7 @@
                 <img src="img/GPT_Handlekurv_UU.jpg" alt="" />
             </article>
         </section>
-        <section class="analyse-section table-container">
+        <section class="analyse-section sammenligning-container">
             <h2>Sammenligning av resultater</h2>
             <table id="sammenligning">
                 <thead>
@@ -211,63 +212,73 @@
                 <tbody>
                     <tr>
                         <td>Meta tagger</td>
-                        <td><p>Generisk og repeterende title tagger, mangler meta description, mangler sitemap</p></td>
-                        <td><p>Manglende meta description</p></td>
-                        <td><p></p></td>
+                        <td><p>Generisk og repeterende title tagger, mangler meta description, mangler sitemap. Sosiale medier tagger</p></td>
+                        <td><p>Manglende meta description.</p></td>
+                        <td><p>Reagerer ikke på manglende meta tagger.</p></td>
                     </tr>
                     <tr>
-                        <td>UU navigasjon</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>tastaturnavigasjon</td>
+                        <td><p>Enkelte knapper i slider, og øke/minke antall produkter i handlekurv må kunne bruke tastaturnavigasjon. Focus outline må være mer synlig.</p></td>
+                        <td><p>"Skip-link" er ikke fokuserbare på enkelte sider.</p></td>
+                        <td><p>"Skip-link" linker ikke til noen Id på produkt og handlekurv.</p></td>
                     </tr>
                     <tr>
                         <td>Semantikk</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><p>Mangler label tag for form inputs i header og footer på alle sider. Bedre heading struktur på produkt og handlekurv. Bruk av button tag istedenfor span på enkelte knapper.</p></td>
+                        <td><p>N/A</p></td>
+                        <td><p>Mangler label tag for form inputs i header og footer på alle sider.</p></td>
                     </tr>
                     <tr>
                         <td>Optimalisere bilder</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><p>Bruke srcset for å laste inn ulike bilder for skjermer, bruke lazy-loading.</p></td>
+                        <td><p>Mindre bildestørrelser, bruke WebP format, benytte eksplisitte verdier for bredde og høyde.</p></td>
+                        <td><p>N/A</p></td>
                     </tr>
                     <tr>
                         <td>Bildetekst og navn</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><p>Mer konkret navngivning av bilder og alternativ tekst.</p></td>
+                        <td><p>N/A</p></td>
+                        <td><p>N/A</p></td>
                     </tr>
                     <tr>
                         <td>Strukturert data</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><p>Microdata eller JSON-LD for lesbarhet. Spesifikke forslag som på breadcrumbs og produktinfo.</p></td>
+                        <td><p>Anbefaler strukturert data, men ikke som feilmelding eller advarsel.</p></td>
+                        <td><p>N/A</p></td>
                     </tr>
                     <tr>
                         <td>Responsivt design</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><p>N/A</p></td>
+                        <td><p>N/A</p></td>
+                        <td><p>N/A</p></td>
                     </tr>
                     <tr>
                         <td>Fargekontrast</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><p>Får ikke css koden, informerer om å validere fargekontrasten.</p></td>
+                        <td><p>N/A</p></td>
+                        <td><p>Kun dårlig fargekontrast i "skip-link" knapp.</p></td>
                     </tr>
                     <tr>
                         <td>Aria-labels</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><p>Mer aria-labels på interaktive elementer uten forklarende semantiske tagger. Unngå overforbruk av aria-labels der forklaring av et element er representert.</p></td>
+                        <td><p>Informerer om å bruke aria-labels på interaktive elementer uten forklarende tagger</p></td>
+                        <td><p>Informerer om at Aria-labels er representert på ulike sider.</p></td>
                     </tr>
                 </tbody>
             </table>
         </section>
         <section class="analyse-section">
             <h2>Forberdringstiltak</h2>
+            <ul>
+                <li>Mer beskrivende title tag på produkt og handlekurv.</li>
+                <li>Legge meta description tagg med relevant innhold på alle sider.</li>
+                <li>Linke "skip-link" til riktig id slik at den fungerer på produkt og handlekurv.</li>
+                <li>Bruke Srcset til å laste inn ulike bildestørrelser for ulik skjermoppløsning.</li>
+                <li>Bruke WebP format istedenfor JPG på mindre bilder.</li>
+                <li>Bruke label tag for bedre beskrivelser av form inputs, gjelder søkebar i header, nyhetsbrev påmelding i footer, og antall produkter i handlekurv.</li>
+                <li>Bedre heading struktur. H1 på produkt siden må vises i koden før produktbilder, løsning er å bruke flex order til å endre rekkefølge slik at info kommer først, men visuelt etter produktbildene.</li>
+                <li>Mer aria-labels på interaktive elementer uten spesifikke tagger eller beskrivelser. Unngå bruk av aria-labels på allerede beskrevet elemeneter som logo</li>
+            </ul>
         </section>
         <section class="analyse-section">
             <h2>SEO og UU analyse med Google Lighthouse (oppdatering)</h2>
@@ -332,7 +343,7 @@
             </article>
         </section>
         <section id="footer-sub">
-            <p>© 2023, Firstshoes</p>
+            <p>© 2023, Firstshoes, du kan ikke stave analyse uten anal</p>
         </section>
     </footer>
 </body>

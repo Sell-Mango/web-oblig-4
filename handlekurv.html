@@ -2,16 +2,17 @@
 <html lang="no">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <title>Firstshoes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Firstshoes selger billige sko til hele familien i alle årstider. Gratis levering og 60 dagers åpent kjøp.">
+    <title>Handlekurv - Firstshoes</title>
 </head>
 <body>
     <header>
-        <a href="#main" class="skip-link">Hopp til hovedinnhold</a>
+        <a href="#handlekurv" class="skip-link">Hopp til hovedinnhold</a>
         <section id="header-sub">
             <span>Gratis levering<img src="gfx/check.svg" alt="Checkmark" class="icon-xs"></span>
             <span>Gratis retur<img src="gfx/check.svg" alt="Checkmark" class="icon-xs"></span>
@@ -49,6 +50,7 @@
                 </ul>
             </nav>
             <form role="search">
+                <label for="search-input" hidden>Søk etter sko</label>
                 <input type="text" id="search-input" placeholder="Søk etter produkter">
                 <button type="submit"><img src="gfx/search.svg" alt="" class="icon-white">Søk</button>
             </form>
@@ -68,8 +70,9 @@
                 </article>
                 <article>
                     <form>
+                        <label for="quality-1" hidden>Antall</label>
                         <img src="gfx/left-arrow.svg" alt="" class="icon-xs">
-                        <input type="number" placeholder="1">
+                        <input type="number" id="quality-1" placeholder="1">
                         <img src="gfx/right-arrow.svg" alt="" class="icon-xs">
                     </form>
                     <span>499,-</span>
@@ -84,8 +87,9 @@
                 </article>
                 <article>
                     <form>
+                        <label for="quality-2" hidden>Antall</label>
                         <img src="gfx/left-arrow.svg" alt="" class="icon-xs">
-                        <input type="number" placeholder="1">
+                        <input type="number" id="quality-2" placeholder="1">
                         <img src="gfx/right-arrow.svg" alt="" class="icon-xs">
                     </form>
                     <span>249,-</span>
@@ -100,8 +104,9 @@
                 </article>
                 <article>
                     <form>
+                        <label for="quality-3" hidden>Antall</label>
                         <img src="gfx/left-arrow.svg" alt="" class="icon-xs">
-                        <input type="number" placeholder="1">
+                        <input type="number" id="quality-3" placeholder="1">
                         <img src="gfx/right-arrow.svg" alt="" class="icon-xs">
                     </form>
                     <span>249,-</span>
@@ -126,7 +131,8 @@
                 <p>Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.</p>
                 <form>
                     <h3>Meld deg på nyhetsbrev</h3>
-                    <input type="text" placeholder="E-post">
+                    <label for="sign-up-mail" hidden>Din E-post</label>
+                    <input type="email" id="sign-up-mail" placeholder="E-post">
                     <input type="submit" value="Bli medlem nå!">
                 </form>
             </article>
