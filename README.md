@@ -2,7 +2,7 @@
  Prosjektmappe for oblig 4 i webutvikling faget. Revidert skobutikk nettsiden Firstshoes til å inkludere analyse før og etter forbedret SEO, bedre UU og Microdata
 
 
-Bildekilder:
+# Bildekilder:
 1. Tittel: the-alps-331, Credit: Pasja1000, Link: https://pixabay.com/no/photos/alpene-hun-sn%C3%B8-vinter-fjell-kalde-3315120/
 2. Tittel: autum_collection_man, Credit: Nathan Dumlao, Link: https://unsplash.com/photos/person-sitting-on-red-concrete-pavement-pf6LeVns4Xo
 3. Tittel: cheap_shoes_year, Credit: Ben Weber, Link: https://unsplash.com/photos/people-wearing-black-vans-old-skool-8W-p8SS6NJE
