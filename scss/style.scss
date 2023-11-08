@@ -496,7 +496,6 @@ header {
     img {
         width: 100%;
         max-height: 18rem;
-        //order: -1;
         object-fit: cover;
         object-position: bottom;
     }
@@ -1016,7 +1015,7 @@ footer {
 
         h3 { width: 100%; }
 
-        [type="text"] {
+        [type="email"] {
             height: 3.8rem;
             flex-grow: 1;
             font-size: $text-m;
@@ -1027,6 +1026,7 @@ footer {
             background-color: $shade-11;
             color: $white;
             border: none;
+            cursor: pointer;
             padding: 0 $space-m;
         }
     }
@@ -1082,8 +1082,9 @@ $breakpoint-small-laptop: 991px;
     }
 
     #footer-main > :nth-child(2), #footer-main > :nth-child(4)  { margin-left: $space-l; }
-}
+    footer { form { [type="submit"] { padding: 1.1rem $space-m; } }}
 
+}
 @media (min-width: $breakpoint-small-laptop) {
     header { 
         background: linear-gradient(180deg, $shade-92 0%, $shade-92 35%, $white 36%, $white 100%);
@@ -1111,8 +1112,10 @@ $breakpoint-small-laptop: 991px;
 
         img, picture { max-height: 27rem; }
 
+        picture {
+            height: 27rem;
+        }
         span:not(:last-child) { font-size: $heading-xs; }
-    
     }
 
     #bli-medlem article { min-height: 50rem; }
@@ -1122,6 +1125,7 @@ $breakpoint-small-laptop: 991px;
         grid-template-columns: repeat(2, 1fr);
         max-width: $document-width;
         margin: auto;
+        
     }
 
     #prod_slider .slide {

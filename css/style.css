@@ -993,7 +993,7 @@ footer form {
 footer form h3 {
   width: 100%;
 }
-footer form [type=text] {
+footer form [type=email] {
   height: 3.8rem;
   flex-grow: 1;
   font-size: clamp(1.6rem, 1.6rem + (1vw - 0.76rem) * 0.3846, 1.8rem);
@@ -1003,6 +1003,7 @@ footer form [type=submit] {
   background-color: #1C1C1C;
   color: #ffffff;
   border: none;
+  cursor: pointer;
   padding: 0 clamp(2rem, 2rem + (1vw - 0.76rem) * 1.7308, 2.9rem);
 }
 
@@ -1054,6 +1055,9 @@ footer form [type=submit] {
   #footer-main > :nth-child(2), #footer-main > :nth-child(4) {
     margin-left: clamp(3rem, 3rem + (1vw - 0.76rem) * 2.3077, 4.2rem);
   }
+  footer form [type=submit] {
+    padding: 1.1rem clamp(2rem, 2rem + (1vw - 0.76rem) * 1.7308, 2.9rem);
+  }
 }
 @media (min-width: 991px) {
   header {
@@ -1084,6 +1088,9 @@ footer form [type=submit] {
   }
   #produkter img, #produkter picture {
     max-height: 27rem;
+  }
+  #produkter picture {
+    height: 27rem;
   }
   #produkter span:not(:last-child) {
     font-size: clamp(2rem, 2rem + (1vw - 0.76rem) * 0.9615, 2.5rem);
