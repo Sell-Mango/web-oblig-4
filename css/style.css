@@ -913,6 +913,10 @@ header {
   width: 100%;
 }
 
+.analyse-full-img {
+  width: 100%;
+}
+
 .gpt-row {
   display: block;
 }
@@ -964,6 +968,11 @@ header {
 #sammenligning tr td:first-child {
   font-size: clamp(1.4rem, 1.4rem + (1vw - 0.76rem) * 0.3846, 1.6rem);
   font-weight: 500;
+}
+
+.box-solid {
+  background-color: #F7F7F7;
+  padding: clamp(1.2rem, 1.2rem + (1vw - 0.76rem) * 1.1538, 1.8rem);
 }
 
 footer {
@@ -1129,6 +1138,9 @@ footer form [type=submit] {
   #prod_info_action {
     background-color: inherit;
     grid-template-columns: repeat(2, 1fr);
+  }
+  #prod_info_action :first-child {
+    grid-column: 1/-1;
   }
   #handlekurv {
     grid-template-columns: repeat(3, 1fr);

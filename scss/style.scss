@@ -926,6 +926,10 @@ header {
      }
 }
 
+.analyse-full-img {
+    width: 100%;
+}
+
 .gpt-row {
     display: block;
 
@@ -982,6 +986,11 @@ header {
         font-size: $text-s;
         font-weight: 500;
     }
+}
+
+.box-solid {
+    background-color: $shade-97;
+    padding: $space-s;
 }
 
 
@@ -1153,6 +1162,7 @@ $breakpoint-small-laptop: 991px;
     }
 
     #prod_info_action {
+        :first-child { grid-column: 1 / -1; }
         background-color:inherit;
         grid-template-columns: repeat(2, 1fr);
     }

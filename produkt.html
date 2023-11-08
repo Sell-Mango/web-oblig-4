@@ -8,6 +8,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Kjøp Liam warm black fra Gore-tex, slitesterke vintersko som er perfekte for barn som ønsker litt originalitet i vinter.">
+
+    <!-- Facebook metadata -->
+    <meta property="og:url" content="https://itstud.hiof.no/~kjellmal/webutvikling/oblig4/produkt.html" />
+    <meta property="og:type" content="product" />
+    <meta property="og:title" content="Liam warm gore-tex black - Firstshoes" />
+    <meta property="og:description" content="Kjøp Liam warm black fra Gore-tex, slitesterke vintersko som er perfekte for barn som ønsker litt originalitet i vinter" />
+    <meta property="og:image" content="https://itstud.hiof.no/~kjellmal/webutvikling/oblig4/img/x1280/viking-s_1280.webp" />
+
+    <!-- Twitter metadata -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@firstshoes">
+    <meta name="twitter:title" content="Liam warm gore-tex black - Firstshoes">
+    <meta name="twitter:description" content="Kjøp Liam warm black fra Gore-tex, slitesterke vintersko som er perfekte for barn som ønsker litt originalitet i vinter">
+    <meta name="twitter:image" content="https://itstud.hiof.no/~kjellmal/webutvikling/oblig4/img/x1280/viking-s_1280.webp" />
+
     <title>Liam warm gore-tex black - Firstshoes</title>
 </head>
 <body>
@@ -32,7 +47,7 @@
             </nav>
         </section>
         <section id="header-main">
-            <span class="logo" role="navigation"><a href="index.html">Firstshoes</a></span>
+            <span class="logo"><a href="index.html">Firstshoes</a></span>
             <span class="icon-m">
                 <a href="#"><img src="gfx/search.svg" alt="Søk etter produkter" class="icon-m"></a>
             </span>
@@ -51,17 +66,19 @@
             </nav>
             <form role="search">
                 <label for="search-input" hidden>Søk etter sko</label>
-                <input type="text" id="search-input" placeholder="Søk etter produkter">
+                <input type="text" id="search-input" placeholder="Søk etter sko">
                 <button type="submit"><img src="gfx/search.svg" alt="" class="icon-white">Søk</button>
             </form>
         </section>
     </header>
-    <main id="produkt">
+    <main id="produkt" itemscope itemtype="https://schema.org/Product">
         <section id="prod_info">
             <article id="prod_info_header">
-                <span id="info_brand">Viking</span>
-                <h1>Liam warm gore-tex black</h1>
-                <p>Disse turinspirerte vinterskoene er perfekte for barn som ønsker litt originalitet i vinter. Liam Mid GTX Warm har en slitesterk konstruksjon, med et varmt isolerende fôr og vanntett Gore-Tex-beskyttelse. Disse skoene har en standard passform og elastiske snører som er sikret med en borrelåsstropp.</p>
+                <div itemprop="brand" itemtype="https://schema.org/Brand" itemscope>
+                    <span itemprop="name" id="info_brand" content="Viking">Viking</span>
+                  </div>
+                <h1 itemprop="name">Liam warm gore-tex black</h1>
+                <p itemprop="description">Disse turinspirerte vinterskoene er perfekte for barn som ønsker litt originalitet i vinter. Liam Mid GTX Warm har en slitesterk konstruksjon, med et varmt isolerende fôr og vanntett Gore-Tex-beskyttelse. Disse skoene har en standard passform og elastiske snører som er sikret med en borrelåsstropp.</p>
             </article>
             <article id="prod_info_color">
                 <h2>Velg farge</h2>
@@ -72,33 +89,45 @@
             <article id="prod_info_size">
                 <h2>Velg størrelse</h2>
                 <button>Velg størrelse<img src="gfx/right-arrow.svg" alt="" class="icon-xs"></button>
-                <span>39</span>
-                <span>40</span>
-                <span>41</span>
-                <span>42</span>
-                <span>43</span>
-                <span>44</span>
-                <span>45</span>
-                <span>46</span>
+                <span itemprop="size">39</span>
+                <span itemprop="size">40</span>
+                <span itemprop="size">41</span>
+                <span itemprop="size">42</span>
+                <span itemprop="size">43</span>
+                <span itemprop="size">44</span>
+                <span itemprop="size">45</span>
+                <span itemprop="size">46</span>
             </article>
             <article id="prod_info_action">
-                <span>399,-</span>
+                <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="NOK" />
+                    <span itemprop="price" content="399">399,-</span>
+                </div>
                 <a href="handlekurv.html" class="btn-l solid-dark">Legg i handlekurv<img src="gfx/shopping_bag.svg" alt="" class="icon-s icon-white"></a>
                 <a href="handlekurv.html" class="btn-l outline-dark">Legg til favoritt<img src="gfx/heart.svg" alt="" class="icon-s"></a>
             </article>
         </section>
         <section id="prod_start">
-            <ul class="breadcrumbs">
-                <li><a href="index.html">Hjem</a></li>
-                <li><a href="#">Produkter</a></li>
-                <li>Produkt</li>
-            </ul>
+            <ol itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumbs">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="index.html"><span itemprop="name">Hjem</span></a>
+                    <meta itemprop="position" content="1">
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="#"><span itemprop="name">Herresko</span></a>
+                    <meta itemprop="position" content="2">
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <span itemprop="name">Liam warm gore-tex black</span>
+                    <meta itemprop="position" content="3">
+                </li>
+            </ol>
             <div id="prod_slider">
                 <span class="slide">
                     <picture>
                         <source srcset="img/x1280/viking-s_1280.webp" media="(min-width: 1280px)" />
                         <source srcset="img/x760/viking-s_760.webp" media="(min-width: 760px)" />
-                        <img src="img/viking-s.webp" alt="Produktvisualisering av en sko" class="slide-img bg-image">
+                        <img itemprop="image" src="img/viking-s.webp" alt="Produktvisualisering av en sko" class="slide-img bg-image">
                     </picture>
                 </span>
                 <span class="slide">
@@ -120,9 +149,9 @@
                     <span class="slide-arrow-right icon-xs" tabindex="0" onclick="plusDivs(1)"><img src="gfx/right-arrow.svg" alt="slide til høyre" class="slide-navi-arrow"></span>
                 </div>
                 <div class="slide-dots">
-                    <span class="dot" onclick="currentDiv(1)"></span>
-                    <span class="dot" onclick="currentDiv(2)"></span>
-                    <span class="dot" onclick="currentDiv(3)"></span>
+                    <span class="dot" tabindex="0" onclick="currentDiv(1)"></span>
+                    <span class="dot" tabindex="0" onclick="currentDiv(2)"></span>
+                    <span class="dot" tabindex="0" onclick="currentDiv(3)"></span>
                 </div>
             </div>
             <picture>

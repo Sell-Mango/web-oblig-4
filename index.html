@@ -8,6 +8,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Firstshoes er ledende for billige sko til hele familien i alle årstider. Gratis levering og 60 dagers åpent kjøp. Bli medlem og få tilbud på vintersko.">
+
+    <!-- Facebook metadata -->
+    <meta property="og:url" content="https://itstud.hiof.no/~kjellmal/webutvikling/oblig4/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Firstshoes - Billige sko hele året" />
+    <meta property="og:description" content="Firstshoes er ledende for billige sko til hele familien i alle årstider. Gratis levering og 60 dagers åpent kjøp. Bli medlem og få tilbud på vintersko." />
+    <meta property="og:image" content="https://itstud.hiof.no/~kjellmal/webutvikling/oblig4/img/x1280/autum_collection_man_1280.jpg" />
+
+    <!-- Twitter metadata -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@firstshoes">
+    <meta name="twitter:title" content="Firstshoes - Billige sko hele året">
+    <meta name="twitter:description" content="Firstshoes er ledende for billige sko til hele familien i alle årstider. Gratis levering og 60 dagers åpent kjøp. Bli medlem og få tilbud på vintersko.">
+    <meta name="twitter:image" content="https://itstud.hiof.no/~kjellmal/webutvikling/oblig4/img/x1280/autum_collection_man_1280.jpg" />
+
     <title>Firstshoes - Billige sko hele året</title>
 </head>
 <body>
@@ -32,14 +47,14 @@
             </nav>
         </section>
         <section id="header-main">
-            <span class="logo" role="navigation"><a href="index.html">Firstshoes</a></span>
+        <span class="logo"><a href="index.html">Firstshoes</a></span>
             <span class="icon-m">
                 <a href="#"><img src="gfx/search.svg" alt="Søk etter produkter" class="icon-m"></a>
             </span>
             <span class="icon-m">
-               <a href="#" aria-label="menu"><img src="gfx/hamburger.svg" alt="Åpne meny" class="icon-m"></a>
+               <a href="#" aria-label="meny"><img src="gfx/hamburger.svg" alt="Åpne meny" class="icon-m"></a>
             </span>
-            <nav aria-label="primary">
+            <nav aria-label="hovedmeny">
                 <ul>
                     <li><a href="analyse.html">Analyse</a></li>
                     <li><a href="#">Herre</a></li>
@@ -52,7 +67,7 @@
             <form role="search">
                 <label for="search-input" hidden>Søk etter sko</label>
                 <input type="text" id="search-input" placeholder="Søk etter sko">
-                <button type="submit"><img src="gfx/search.svg" alt="" class="icon-white">Søk</button>
+                <button type="submit" aria-label="søk"><img src="gfx/search.svg" alt="" class="icon-white">Søk</button>
             </form>
         </section>
     </header>
@@ -90,12 +105,12 @@
                 <span class="slide-arrow-right icon-xs" onclick="plusDivs(1)" tabindex="0"><img src="gfx/right-arrow.svg" alt="Slide til høyre" class="slide-navi-arrow"></span>
             </div>
             <div class="slide-dots">
-                <span class="dot" onclick="currentDiv(1)"></span>
-                <span class="dot" onclick="currentDiv(2)"></span>
-                <span class="dot" onclick="currentDiv(3)"></span>
+                <span class="dot" tabindex="0" onclick="currentDiv(1)"></span>
+                <span class="dot" tabindex="0" onclick="currentDiv(2)"></span>
+                <span class="dot" tabindex="0" onclick="currentDiv(3)"></span>
             </div>
         </section>
-        <section id="kategorier">
+        <section id="kategorier" aria-label="kategorier">
             <h2 class="heading-2">Hvem handler du for</h2>
             <a href="#" class="category">
                 <h3 class="text-white">Dame</h3>
@@ -136,9 +151,9 @@
                 bærekraftig valg
             </span>
         </section>
-        <section id="merker">
+        <section id="merker" aria-labelledby="brand-heading">
             <article class="merker-header">
-                <h2 class="heading-2">Populære merker</h2>
+                <h2 id="brand-heading" class="heading-2">Populære merker</h2>
                 <p>Utforsk vårt utvalg av merker</p>
                 <span tabindex="0"><img src="gfx/left-arrow.svg" alt="Slide til venstre" class="icon-round-m bg-92"></span>
                 <span tabindex="0"><img src="gfx/right-arrow.svg" alt="Slide til høyre" class="icon-round-m bg-92"></span>
@@ -187,8 +202,8 @@
                 </a>
             </div>
         </section>
-        <section id="produkter">
-            <h2 class="heading-2">Sko til gode priser</h2>
+        <section id="produkter" aria-labelledby="alle-sko">
+            <h2 id="alle-sko" class="heading-2">Sko til gode priser</h2>
             <p>Alltid gode priser</p>
             <article>
                 <a href="produkt.html">
@@ -332,7 +347,7 @@
                     <h3>Meld deg på nyhetsbrev</h3>
                     <label for="sign-up-mail" hidden>Din E-post</label>
                     <input type="email" id="sign-up-mail" placeholder="E-post">
-                    <input type="submit" value="Bli medlem nå!">
+                    <input type="submit" aria-label="bli medlem" value="Bli medlem nå!">
                 </form>
             </article>
             <article>
