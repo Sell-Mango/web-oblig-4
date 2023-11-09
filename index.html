@@ -10,18 +10,18 @@
     <meta name="description" content="Firstshoes er ledende for billige sko til hele familien i alle årstider. Gratis levering og 60 dagers åpent kjøp. Bli medlem og få tilbud på vintersko.">
 
     <!-- Facebook metadata -->
-    <meta property="og:url" content="https://itstud.hiof.no/~kjellmal/webutvikling/oblig4/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Firstshoes - Billige sko hele året" />
-    <meta property="og:description" content="Firstshoes er ledende for billige sko til hele familien i alle årstider. Gratis levering og 60 dagers åpent kjøp. Bli medlem og få tilbud på vintersko." />
-    <meta property="og:image" content="https://itstud.hiof.no/~kjellmal/webutvikling/oblig4/img/x1280/autum_collection_man_1280.jpg" />
+    <meta property="og:url" content="https://itstud.hiof.no/~kjellmal/webutvikling/oblig4/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Firstshoes - Billige sko hele året">
+    <meta property="og:description" content="Firstshoes er ledende for billige sko til hele familien i alle årstider. Gratis levering og 60 dagers åpent kjøp. Bli medlem og få tilbud på vintersko.">
+    <meta property="og:image" content="https://itstud.hiof.no/~kjellmal/webutvikling/oblig4/img/x1280/autum_collection_man_1280.jpg">
 
     <!-- Twitter metadata -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@firstshoes">
     <meta name="twitter:title" content="Firstshoes - Billige sko hele året">
     <meta name="twitter:description" content="Firstshoes er ledende for billige sko til hele familien i alle årstider. Gratis levering og 60 dagers åpent kjøp. Bli medlem og få tilbud på vintersko.">
-    <meta name="twitter:image" content="https://itstud.hiof.no/~kjellmal/webutvikling/oblig4/img/x1280/autum_collection_man_1280.jpg" />
+    <meta name="twitter:image" content="https://itstud.hiof.no/~kjellmal/webutvikling/oblig4/img/x1280/autum_collection_man_1280.jpg">
 
     <title>Firstshoes - Billige sko hele året</title>
 </head>
@@ -32,7 +32,7 @@
             <span>Gratis levering<img src="gfx/check.svg" alt="Checkmark" class="icon-xs"></span>
             <span>Gratis retur<img src="gfx/check.svg" alt="Checkmark" class="icon-xs"></span>
             <span>60 dagers åpent kjøp<img src="gfx/check.svg" alt="Checkmark" class="icon-xs"></span>
-            <nav aria-label="secondary">
+            <nav aria-label="submeny">
                 <ul>
                     <li>
                         <a href="#" class="text-black"><span>favoritter</span><img src="gfx/heart.svg" alt="Vis lagret i favoritter" class="icon-s"></a>
@@ -67,7 +67,8 @@
             <form role="search">
                 <label for="search-input" hidden>Søk etter sko</label>
                 <input type="text" id="search-input" placeholder="Søk etter sko">
-                <button type="submit" aria-label="søk"><img src="gfx/search.svg" alt="" class="icon-white">Søk</button>
+                <label for="search-button" hidden>Søk</label>
+                <button type="submit" id="search-button" aria-label="søk"><img src="gfx/search.svg" alt="" class="icon-white">Søk</button>
             </form>
         </section>
     </header>
@@ -77,8 +78,8 @@
                 <h1 class="heading-1 text-white">30% på alle vintersko</h1>
                 <a href="#" class="btn-l solid-light">Se tilbud!</a>
                 <picture>
-                    <source srcset="img/x1280/the-alps-331_1280.webp" media="(min-width: 1280px)" />
-                    <source srcset="img/x760/the-alps-331_760.webp" media="(min-width: 760px)" />
+                    <source srcset="img/x1280/the-alps-331_1280.webp" media="(min-width: 1280px)">
+                    <source srcset="img/x760/the-alps-331_760.webp" media="(min-width: 760px)">
                     <img src="img/the-alps-331.webp" alt="Header banner" class="slide-img bg-image">
                 </picture>
             </article>
@@ -86,8 +87,8 @@
                 <h2 class="heading-1 text-white">Høstens herrekolleksjon</h2>
                 <a href="#" class="btn-l solid-light">Se tilbud!</a>
                 <picture>
-                    <source srcset="img/x1280/autum_collection_man_1280.jpg" media="(min-width: 1280px)" />
-                    <source srcset="img/x760/autum_collection_man_760.jpg" media="(min-width: 760px)" />
+                    <source srcset="img/x1280/autum_collection_man_1280.jpg" media="(min-width: 1280px)">
+                    <source srcset="img/x760/autum_collection_man_760.jpg" media="(min-width: 760px)">
                     <img src="img/autum_collection_man.jpg" alt="Header banner" class="slide-img bg-image">
                 </picture>
             </article>
@@ -95,8 +96,8 @@
                 <h2 class="heading-1 text-white">Billige sko hele året</h2>
                 <a href="#" class="btn-l solid-light">Se tilbud!</a>
                 <picture>
-                    <source srcset="img/x1280/cheap_shoes_year_1280.webp" media="(min-width: 1280px)" />
-                    <source srcset="img/x760/cheap_shoes_year_760.webp" media="(min-width: 760px)" />
+                    <source srcset="img/x1280/cheap_shoes_year_1280.webp" media="(min-width: 1280px)">
+                    <source srcset="img/x760/cheap_shoes_year_760.webp" media="(min-width: 760px)">
                     <img src="img/cheap_shoes_year.webp" alt="Header banner" class="slide-img bg-image">
                 </picture>
             </article>
@@ -115,24 +116,24 @@
             <a href="#" class="category">
                 <h3 class="text-white">Dame</h3>
                 <picture>
-                    <source srcset="img/x1280/karabadgak-shoes-2914977_1280.webp" media="(min-width: 1280px)" />
-                    <source srcset="img/x760/karabadgak-shoes-2914977_760.webp" media="(min-width: 760px)" />
+                    <source srcset="img/x1280/karabadgak-shoes-2914977_1280.webp" media="(min-width: 1280px)">
+                    <source srcset="img/x760/karabadgak-shoes-2914977_760.webp" media="(min-width: 760px)">
                     <img src="img/karabadgak-shoes-2914977.webp" alt="Sko for damer" class="bg-image">
                 </picture>
             </a>
             <a href="#" class="category">
                 <h3 class="text-white">Herre</h3>
                 <picture>
-                    <source srcset="img/x1280/black-jiracheep-B5MKPcwjXr4-unsplash_1280.webp" media="(min-width: 1280px)" />
-                    <source srcset="img/x760/black-jiracheep-B5MKPcwjXr4-unsplash_760.webp" media="(min-width: 760px)" />
+                    <source srcset="img/x1280/black-jiracheep-B5MKPcwjXr4-unsplash_1280.webp" media="(min-width: 1280px)">
+                    <source srcset="img/x760/black-jiracheep-B5MKPcwjXr4-unsplash_760.webp" media="(min-width: 760px)">
                     <img src="img/black-jiracheep-B5MKPcwjXr4-unsplash.webp" alt="Sko for damer" class="bg-image">
                 </picture>
             </a>
             <a href="#" class="category">s
                 <h3 class="text-white">Barn</h3>
                 <picture>
-                    <source srcset="img/x1280/sven-brandsma-iVAs1Y_C8qI-unsplash_1280.webp" media="(min-width: 1280px)" />
-                    <source srcset="img/x760/sven-brandsma-iVAs1Y_C8qI-unsplash_760.webp" media="(min-width: 760px)" />
+                    <source srcset="img/x1280/sven-brandsma-iVAs1Y_C8qI-unsplash_1280.webp" media="(min-width: 1280px)">
+                    <source srcset="img/x760/sven-brandsma-iVAs1Y_C8qI-unsplash_760.webp" media="(min-width: 760px)">
                     <img src="img/sven-brandsma-iVAs1Y_C8qI-unsplash.webp" alt="Sko for damer" class="bg-image">
                 </picture>
             </a>
@@ -162,8 +163,8 @@
                 <a href="#">
                     <h3 class="text-white">Ecco</h3>
                     <picture>
-                        <source srcset="img/x1280/Ecco+Shoes+Blog+1_1280.webp" media="(min-width: 1280px)" />
-                        <source srcset="img/x760/Ecco+Shoes+Blog+1_760.webp" media="(min-width: 760px)" />
+                        <source srcset="img/x1280/Ecco+Shoes+Blog+1_1280.webp" media="(min-width: 1280px)">
+                        <source srcset="img/x760/Ecco+Shoes+Blog+1_760.webp" media="(min-width: 760px)">
                         <img src="img/Ecco+Shoes+Blog+1.webp" alt="produktbrand for Ecco" class="bg-image">
                     </picture>
                     <p>Kjøp Ecco sko<img src="gfx/arrow-right-2.svg" alt=""></p>
@@ -171,8 +172,8 @@
                 <a href="#">
                     <h3 class="text-white">Nike</h3>
                     <picture>
-                        <source srcset="img/x1280/feet-1840619_1280.webp" media="(min-width: 1280px)" />
-                        <source srcset="img/x760/feet-1840619_760.webp" media="(min-width: 760px)" />
+                        <source srcset="img/x1280/feet-1840619_1280.webp" media="(min-width: 1280px)">
+                        <source srcset="img/x760/feet-1840619_760.webp" media="(min-width: 760px)">
                         <img src="img/feet-1840619.webp" alt="produktbrand for Nike" class="bg-image">
                     </picture>
                     <p>Kjøp Nike sko<img src="gfx/arrow-right-2.svg" alt=""></p>
@@ -185,8 +186,8 @@
                 <a href="#">
                     <h3 class="text-white">Ecco</h3>
                     <picture>
-                        <source srcset="img/x1280/arunas-naujokas-yzmtlz9SJ4A-unsplash_1280.jpg" media="(min-width: 1280px)" />
-                        <source srcset="img/x760/arunas-naujokas-yzmtlz9SJ4A-unsplash_760.jpg" media="(min-width: 760px)" />
+                        <source srcset="img/x1280/arunas-naujokas-yzmtlz9SJ4A-unsplash_1280.jpg" media="(min-width: 1280px)">
+                        <source srcset="img/x760/arunas-naujokas-yzmtlz9SJ4A-unsplash_760.jpg" media="(min-width: 760px)">
                         <img src="img/arunas-naujokas-yzmtlz9SJ4A-unsplash.jpg" alt="produktbrand for Ecco" class="bg-image">
                     </picture>
                     <p>Kjøp Ecco sko<img src="gfx/arrow-right-2.svg" alt=""></p>
@@ -194,8 +195,8 @@
                 <a href="#">
                     <h3 class="text-white">Ecco</h3>
                     <picture>
-                        <source srcset="img/x1280/arunas-naujokas-yzmtlz9SJ4A-unsplash_1280.jpg" media="(min-width: 1280px)" />
-                        <source srcset="img/x760/arunas-naujokas-yzmtlz9SJ4A-unsplash_760.jpg" media="(min-width: 760px)" />
+                        <source srcset="img/x1280/arunas-naujokas-yzmtlz9SJ4A-unsplash_1280.jpg" media="(min-width: 1280px)">
+                        <source srcset="img/x760/arunas-naujokas-yzmtlz9SJ4A-unsplash_760.jpg" media="(min-width: 760px)">
                         <img src="img/arunas-naujokas-yzmtlz9SJ4A-unsplash.jpg" alt="produktbrand for Ecco" class="bg-image">
                     </picture>
                     <p>Kjøp Ecco sko<img src="gfx/arrow-right-2.svg" alt=""></p>
@@ -212,8 +213,8 @@
                     <span>249kr</span>
                     <span><img src="gfx/heart.svg" alt="Legg til favoritt"></span>
                     <picture>
-                        <source srcset="img/x1280/viking-s_1280.webp" media="(min-width: 1280px)" />
-                        <source srcset="img/x760/viking-s_760.webp" media="(min-width: 760px)" />
+                        <source srcset="img/x1280/viking-s_1280.webp" media="(min-width: 1280px)">
+                        <source srcset="img/x760/viking-s_760.webp" media="(min-width: 760px)">
                         <img src="img/viking-s.webp" alt="produktbilde for Liam warm gore-tex black sko">
                     </picture>
                 </a>
@@ -225,8 +226,8 @@
                     <span>249kr</span>
                     <span><img src="gfx/heart.svg" alt="Legg til favoritt"></span>
                     <picture>
-                        <source srcset="img/x1280/duffy-s_1280.webp" media="(min-width: 1280px)" />
-                        <source srcset="img/x760/duffy-s_760.webp" media="(min-width: 760px)" />
+                        <source srcset="img/x1280/duffy-s_1280.webp" media="(min-width: 1280px)">
+                        <source srcset="img/x760/duffy-s_760.webp" media="(min-width: 760px)">
                         <img src="img/duffy-s.webp" alt="produktbilde for Shape 35 sartorelle sko">
                     </picture>
                 </a>
@@ -238,8 +239,8 @@
                     <span>249kr</span>
                     <span><img src="gfx/heart.svg" alt="Legg til favoritt"></span>
                     <picture>
-                        <source srcset="img/x1280/eccho-s2_1280.webp" media="(min-width: 1280px)" />
-                        <source srcset="img/x760/eccho-s2_760.webp" media="(min-width: 760px)" />
+                        <source srcset="img/x1280/eccho-s2_1280.webp" media="(min-width: 1280px)">
+                        <source srcset="img/x760/eccho-s2_760.webp" media="(min-width: 760px)">
                         <img src="img/eccho-s2.webp" alt="produktbilde for Liam warm gore-tex black sko">
                     </picture>
                 </a>
@@ -251,8 +252,8 @@
                     <span>249kr</span>
                     <span><img src="gfx/heart.svg" alt="Legg til favoritt"></span>
                     <picture>
-                        <source srcset="img/x1280/rieker-evolution-s_1280.webp" media="(min-width: 1280px)" />
-                        <source srcset="img/x760/rieker-evolution-s_760.webp" media="(min-width: 760px)" />
+                        <source srcset="img/x1280/rieker-evolution-s_1280.webp" media="(min-width: 1280px)">
+                        <source srcset="img/x760/rieker-evolution-s_760.webp" media="(min-width: 760px)">
                         <img src="img/rieker-evolution-s.webp" alt="produktbilde for R-revolurion skinnsneakers sko">
                     </picture>
                 </a>
@@ -264,8 +265,8 @@
                     <span>249kr</span>
                     <span><img src="gfx/heart.svg" alt="Legg til favoritt"></span>
                     <picture>
-                        <source srcset="img/x1280/polo-s_1280.webp" media="(min-width: 1280px)" />
-                        <source srcset="img/x760/polo-s_760.webp" media="(min-width: 760px)" />
+                        <source srcset="img/x1280/polo-s_1280.webp" media="(min-width: 1280px)">
+                        <source srcset="img/x760/polo-s_760.webp" media="(min-width: 760px)">
                         <img src="img/polo-s.webp" alt="produktbilde for Masters crt - sneakers low top lace sko">
                     </picture>
                 </a>
@@ -277,8 +278,8 @@
                     <span>249kr</span>
                     <span><img src="gfx/heart.svg" alt="Legg til favoritt"></span>
                     <picture>
-                        <source srcset="img/x1280/leaf-s_1280.webp" media="(min-width: 1280px)" />
-                        <source srcset="img/x760/leaf-s_760.webp" media="(min-width: 760px)" />
+                        <source srcset="img/x1280/leaf-s_1280.webp" media="(min-width: 1280px)">
+                        <source srcset="img/x760/leaf-s_760.webp" media="(min-width: 760px)">
                         <img src="img/leaf-s.webp" alt="produktbilde for Nautisk waterproof varmeforet sko">
                     </picture>
                 </a>
@@ -290,8 +291,8 @@
                     <span>249kr</span>
                     <span><img src="gfx/heart.svg" alt="Legg til favoritt"></span>
                     <picture>
-                        <source srcset="img/x1280/tamaris-s_1280.webp" media="(min-width: 1280px)" />
-                        <source srcset="img/x760/tamaris-s_760.webp" media="(min-width: 760px)" />
+                        <source srcset="img/x1280/tamaris-s_1280.webp" media="(min-width: 1280px)">
+                        <source srcset="img/x760/tamaris-s_760.webp" media="(min-width: 760px)">
                         <img src="img/tamaris-s.webp" alt="produktbilde for Moss tursko gore-tex sko">
                     </picture>
                 </a>
@@ -303,21 +304,21 @@
                     <span>249kr</span>
                     <span><img src="gfx/heart.svg" alt="Legg til favoritt"></span>
                     <picture>
-                        <source srcset="img/x1280/skecher-s_1280.webp" media="(min-width: 1280px)" />
-                        <source srcset="img/x760/skecher-s_760.webp" media="(min-width: 760px)" />
+                        <source srcset="img/x1280/skecher-s_1280.webp" media="(min-width: 1280px)">
+                        <source srcset="img/x760/skecher-s_760.webp" media="(min-width: 760px)">
                         <img src="img/skecher-s.webp" alt="produktbilde for Boys flex glow elite blinkesko">
                     </picture>
                 </a>
             </article>
         </section>
-        <section id="bli-medlem">
+        <section id="bli-medlem" aria-label="Medlemstilbud">
             <article>
                 <h2 class="heading-1 text-white">Få 15% rabatt på ditt første kjøp</h2>
                 <p class="text-white">Bli medlem av kundeklubb og få 15% rabatt på ditt første kjøp</p>
                 <a href="#" class="btn-l solid-light">Bli medlem nå!</a>
                 <picture>
-                    <source srcset="img/x1280/dad-909510_1280.jpg" media="(min-width: 1280px)" />
-                    <source srcset="img/x760/dad-909510_760.jpg" media="(min-width: 760px)" />
+                    <source srcset="img/x1280/dad-909510_1280.jpg" media="(min-width: 1280px)">
+                    <source srcset="img/x760/dad-909510_760.jpg" media="(min-width: 760px)">
                     <img src="img/dad-909510.jpg" alt="" class="bg-image">
                 </picture>
             </article>
@@ -347,7 +348,8 @@
                     <h3>Meld deg på nyhetsbrev</h3>
                     <label for="sign-up-mail" hidden>Din E-post</label>
                     <input type="email" id="sign-up-mail" placeholder="E-post">
-                    <input type="submit" aria-label="bli medlem" value="Bli medlem nå!">
+                    <label for ="sign-up-button" hidden>Bli medlem</label>
+                    <input type="submit" id="sign-up-button" aria-label="bli medlem" value="Bli medlem nå!">
                 </form>
             </article>
             <article>

@@ -902,8 +902,8 @@ header {
     :nth-child(2) { grid-column: 1 / -1; }
 }
 
-.analyse-2-col-grid { @include analyse-grid(2, $space-m); }
-.analyse-3-col-grid { @include analyse-grid(3, $space-m); }
+.analyse-2-col-grid { @include analyse-grid(1, $space-m); }
+.analyse-3-col-grid { @include analyse-grid(1, $space-m); }
 
 .analyse-col {
     display: flex;
@@ -955,7 +955,7 @@ header {
         width: 100%;
         object-fit: contain;
         display: inline-block;
-        max-width: 48%;
+        max-width: 100%;
         margin-bottom: 2em;
     }
 }
@@ -969,7 +969,7 @@ header {
     border-spacing: 0;
     width: 100%;
     
-    h3 {
+    th {
         font-size: $heading-xs;
         font-weight: 500;
     }
@@ -1088,6 +1088,15 @@ $breakpoint-small-laptop: 991px;
 
     #produkt #produkter { 
         grid-template-columns: repeat(2, 1fr)!important;
+    }
+
+    .analyse-2-col-grid { @include analyse-grid(2, $space-m); }
+    .analyse-3-col-grid { @include analyse-grid(3, $space-m); }
+
+    .gpt-row {
+        img {
+            width: 48%;
+        }
     }
 
     #footer-main > :nth-child(2), #footer-main > :nth-child(4)  { margin-left: $space-l; }

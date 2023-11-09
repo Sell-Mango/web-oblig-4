@@ -10,18 +10,18 @@
     <meta name="description" content="Legg til, endre eller slett sko fra din handlekurv">
 
     <!-- Facebook metadata -->
-    <meta property="og:url" content="https://itstud.hiof.no/~kjellmal/webutvikling/oblig4/handlekurv.html" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Handlekurv - Firstshoes" />
-    <meta property="og:description" content="Legg til, endre eller slett sko fra din handlekurv" />
-    <meta property="og:image" content="https://itstud.hiof.no/~kjellmal/webutvikling/oblig4/img/x1280/autum_collection_man_1280.jpg" />
+    <meta property="og:url" content="https://itstud.hiof.no/~kjellmal/webutvikling/oblig4/handlekurv.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Handlekurv - Firstshoes">
+    <meta property="og:description" content="Legg til, endre eller slett sko fra din handlekurv">
+    <meta property="og:image" content="https://itstud.hiof.no/~kjellmal/webutvikling/oblig4/img/x1280/autum_collection_man_1280.jpg">
 
     <!-- Twitter metadata -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@firstshoes">
     <meta name="twitter:title" content="Handlekurv - Firstshoes">
     <meta name="twitter:description" content="Legg til, endre eller slett sko fra din handlekurv">
-    <meta name="twitter:image" content="https://itstud.hiof.no/~kjellmal/webutvikling/oblig4/img/x1280/autum_collection_man_1280.jpg" />
+    <meta name="twitter:image" content="https://itstud.hiof.no/~kjellmal/webutvikling/oblig4/img/x1280/autum_collection_man_1280.jpg">
 
     <title>Handlekurv - Firstshoes</title>
 </head>
@@ -32,7 +32,7 @@
             <span>Gratis levering<img src="gfx/check.svg" alt="Checkmark" class="icon-xs"></span>
             <span>Gratis retur<img src="gfx/check.svg" alt="Checkmark" class="icon-xs"></span>
             <span>60 dagers åpent kjøp<img src="gfx/check.svg" alt="Checkmark" class="icon-xs"></span>
-            <nav aria-label="secondary">
+            <nav aria-label="submeny">
                 <ul>
                     <li>
                         <a href="#" class="text-black"><span>favoritter</span><img src="gfx/heart.svg" alt="Vis lagret i favoritter" class="icon-s"></a>
@@ -54,7 +54,7 @@
             <span class="icon-m">
                <a href="#" aria-label="menu"><img src="gfx/hamburger.svg" alt="Åpne meny" class="icon-m"></a>
             </span>
-            <nav aria-label="primary">
+            <nav aria-label="hovedmeny">
                 <ul>
                     <li><a href="analyse.html">Analyse</a></li>
                     <li><a href="#">Herre</a></li>
@@ -148,7 +148,8 @@
                     <h3>Meld deg på nyhetsbrev</h3>
                     <label for="sign-up-mail" hidden>Din E-post</label>
                     <input type="email" id="sign-up-mail" placeholder="E-post">
-                    <input type="submit" value="Bli medlem nå!">
+                    <label for ="sign-up-button" hidden>Bli medlem</label>
+                    <input type="submit" id="sign-up-button" aria-label="bli medlem" value="Bli medlem nå!">
                 </form>
             </article>
             <article>
